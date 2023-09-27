@@ -1,5 +1,5 @@
 # Bike Sales Dashboard
-Seorang sales manager ingin mengetahui bagaimana profil seseorang dapat mempengaruhi terhadap pembelian sepeda. Oleh karena itu, dia menyuruh seorang Data Analyst untuk membuatkan dashboard agar dia dapat mengambil keputusan.
+Seorang sales manager ingin mengetahui bagaimana profil seseorang mempengaruhi pembelian sepeda. Oleh karena itu, dia meminta seorang Data Analyst untuk membuatkan dashboard agar dia dapat mengambil keputusan.
 
 ## Tentang Dataset
 Dataset ini berisi 13 variabel dan 1026 baris.
