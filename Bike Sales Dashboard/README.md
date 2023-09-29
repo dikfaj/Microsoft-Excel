@@ -4,7 +4,7 @@ Seorang sales manager ingin mengetahui bagaimana profil seseorang mempengaruhi p
 ## Daftar Isi
 - [Tentang Dataset](https://github.com/dikfaj/Microsoft-Excel/tree/main/Bike%20Sales%20Dashboard#tentang-dataset)
 - [Data Preprocessing]()
-- [Pivot Table]()
+- [Pivot Table](#pivot-table)
 - [Dashboard]()
 
 
