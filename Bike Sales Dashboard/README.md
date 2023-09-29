@@ -1,6 +1,13 @@
 # Bike Sales Dashboard
 Seorang sales manager ingin mengetahui bagaimana profil seseorang mempengaruhi pembelian sepeda. Oleh karena itu, dia meminta seorang Data Analyst untuk membuatkan dashboard agar dia dapat mengambil keputusan.
 
+## Daftar Isi
+- [Tentang Dataset]()
+- [Data Preprocessing]()
+- [Pivot Table]()
+- [Dashboard]()
+
+
 ## Tentang Dataset
 Dataset ini berisi 13 variabel dan 1026 baris.
 Variabelnya adalah
@@ -50,5 +57,12 @@ Pada kolom `Age`, range data antara `25 sampai 89 tahun`. Kita akan buat kolom b
 Berikut adalah tampilan data setelah melalui proses Data Preprocessing dan siap untuk divisualisasikan.<br/>
 ![DONE](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/3898d085-a3f0-4117-8459-2e013c66bb4d)
 ## Pivot Table
-
+Berikut adalah tampilan dari Pivot Table yang telah dibuat
+![Pivot tabel](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/6a6b76ca-dcbe-487b-86cc-d64743e51a97)
 ## Dashboard
+![dashboard](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/5d17694e-6800-4c23-a258-a858711f7ff5)
+Berikut adalah beberapa insight yang didapat dari dashboard diatas:
+- Baik laki-laki maupun wanita, orang dengan rata-rata penghasilan tinggi lebih banyak yang membeli sepeda
+- Makin jauh jarak bepergian seseorang, semakin kecil untuk melakukan pembelian sepeda
+- Tingkat pembelian sepeda pada Gen Z paling rendah diantara generasi lain
+- Semakin banyak jumlah kepemilikan mobil, semakin sedikit yang membeli sepeda
