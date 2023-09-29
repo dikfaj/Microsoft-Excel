@@ -2,10 +2,10 @@
 Seorang sales manager ingin mengetahui bagaimana profil seseorang mempengaruhi pembelian sepeda. Oleh karena itu, dia meminta seorang Data Analyst untuk membuatkan dashboard agar dia dapat mengambil keputusan.
 
 ## Daftar Isi
-- [Tentang Dataset](https://github.com/dikfaj/Microsoft-Excel/tree/main/Bike%20Sales%20Dashboard#tentang-dataset)
-- [Data Preprocessing]()
+- [Tentang Dataset](#tentang-dataset)
+- [Data Preprocessing](#data-preprocessing)
 - [Pivot Table](#pivot-table)
-- [Dashboard]()
+- [Dashboard](#dashboard)
 
 
 ## Tentang Dataset
