@@ -3,6 +3,12 @@
 ## Tujuan
 Proyek ini bertujuan untuk memberikan wawasan mendalam mengenai penjualan kopi serta memfasilitasi pengambilan keputusan bisnis yang lebih bijak. 
 
+## Daftar Isi
+- [Tentang Dataset](#tentang-dataset)
+- [Data Preprocessing](#data-preprocessing)
+- [Visualisasi Data](#visualisasi-data)
+- [Hasil Analisis](#hasil-analisis)
+
 ## Tentang Dataset
 Dataset ini terdiri dari 3 tabel yaitu `orders`, `customers`, dan `products`. Berikut adalah contoh dari ketiga tabel tersebut.
 - Tabel Orders <br/>
@@ -47,3 +53,19 @@ Berikut adalah data setelah melalui proses Data Integration
 
   Berikut adalah tampilan dari data yang siap untuk diolah.
   ![Done](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/7a21974d-0d7a-4265-9839-26721b199d74)
+
+## Visualisasi Data
+Analisis data menggunakan `Pivot Table` kemudian dibuat menjadi chart.
+- Total Sales Over Time menggunakan Line Chart
+- Sales By Country menggunakan Bar Chart
+- Top 5 Customers menggunakan Bar Chart
+- Menambahkan Timeline dan Slicers pada grafik pivot untuk filtering interaktif
+
+Berikut adalah tampilan dashboard interaktif yang telah dibuat
+  ![dashboard](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/b7227856-aba1-4ae2-84d7-38c93910b7c1)
+
+## Hasil Analisis
+- <b>Tren penjualan:</b> Dengan menggunakan Line Chart yang interakif dapat melihat tren penjualan kopi dalam beberapa tahun terakgir. Tren penjualan kopi menunjukan penjualan yang stabil dari tahun ke tahun.
+- <b>Produk Terlaris:</b> Kopi Arabica menjadi kopi dengan penjualan tertinggi
+- <b>Kontribusi Pelanggan:</b> Beberapa pelanggan berkontribusi signifikan terhadap penjualan kopi. Dengan data ini stakeholder bisa memutuskan untuk memberikan reward kepada para pelanggan dengan penjualan tertinggi.
+- Amerika menjadi negara dengan penjualan tertinggi. Tidak heran bahwa negara ini merupakan negara dengan konsumsi kopi terbesar di dunia.
