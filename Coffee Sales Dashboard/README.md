@@ -25,7 +25,7 @@ Dataset ini terdiri dari 3 tabel yaitu `orders`, `customers`, dan `products`. Be
 ### Data Integration
 Langkah pertama yang dilakukan adalah menggabungkan ketiga tabel tersebut menjadi satu tabel utuh dengan menggunakan beberapa fungsi.
 - VLOOKUP <br/>
-Dengan menggunakan fungsi `VLOOKUP` untuk menambahkan kolom Customer Name, Country, dan Loyalty Card dari tabel `Customers` ke dalam tabel `Orders`. Contohnya adalah <br/> `=VLOOKUP(C2;customers!$A$2:$I$1001;2;0)`.
+Dengan menggunakan fungsi `VLOOKUP` untuk menambahkan kolom Customer Name, Country, dan Loyalty Card dari tabel `Customers` ke dalam tabel `Orders` dan `Profit` dari tabel products. Contohnya adalah <br/> `=VLOOKUP(C2;customers!$A$2:$I$1001;2;0)`.
 - INDEX dan MATCH <br/>
 Dengan menggunakan funsgi `INDEX` dan `MATCH` untuk menambahkan kolom Coffee Type, Roast Type Size, Unit Price dari tabel `Products` ke tabel `Orders`. Contohnya adalah `=INDEX(products!$A$1:$G$49;MATCH(orders!$D2;products!$A$1:$A$49;0);MATCH(I$1;products!$A$1:$G$1;0))`
 - IF <br/>
@@ -33,10 +33,10 @@ Untuk memudahkan dalam membaca data, kita perlu mengubah beberapa data seperti p
 Berikut adalah formula untuk mengubah `Coffee Type` menjadi `Coffee Type Name`. <br/> `=IF(J2="Rob";"Robusta";IF(J2="Exc";"Excelsa";IF(J2="Ara";"Arabica";IF(J2="Lib";"Liberica";""))))` <br/>
 Berikut adalah formula untuk mengubah `Roast Type Size` menjadi `Roast Type Name`. <br/> `=IF(K2="M";"Medium";IF(K2="L";"Light";IF(K2="D";"Dark")))`.
 - Perkalian
-Dengan menggunakan perkalian untuk menghitung `sales` dengan cara mengalikan `unit price` dengan `quantity`
+  Dengan menggunakan perkalian untuk menghitung `sales` dengan cara mengalikan `unit price` dengan `quantity`. Dan `profit` dikali dengan `quantity`
 
 Berikut adalah data setelah melalui proses Data Integration
-![after integration](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/ef338681-2177-404b-96c8-92a8e664ccd4)
+![after integration](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/e89c545c-4a31-4088-a0d7-d86caa96d5d5)
 
 ### Data Formatting
 - Mengubah Format Tanggal
@@ -52,7 +52,7 @@ Berikut adalah data setelah melalui proses Data Integration
   Terakhir adalah memformat tabel menjadi format Table di menu `Insert` - `Table` untuk mempermudah manajemen dan perbaruan data
 
   Berikut adalah tampilan dari data yang siap untuk diolah.
-  ![Done](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/7a21974d-0d7a-4265-9839-26721b199d74)
+ ![Done](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/c704c4c9-badc-41bb-b74a-c89c51cd0652)
 
 ## Visualisasi Data
 Analisis data menggunakan `Pivot Table` kemudian dibuat menjadi chart.
@@ -62,10 +62,11 @@ Analisis data menggunakan `Pivot Table` kemudian dibuat menjadi chart.
 - Menambahkan Timeline dan Slicers pada grafik pivot untuk filtering interaktif
 
 Berikut adalah tampilan dashboard interaktif yang telah dibuat
-  ![dashboard](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/b7227856-aba1-4ae2-84d7-38c93910b7c1)
+![dashboard](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/387ad85d-9e0c-456a-9695-d107cd235c24)
 
 ## Hasil Analisis
-- <b>Tren penjualan:</b> Dengan menggunakan Line Chart yang interakif dapat melihat tren penjualan kopi dalam beberapa tahun terakgir. Tren penjualan kopi menunjukan penjualan yang stabil dari tahun ke tahun.
-- <b>Produk Terlaris:</b> Kopi Arabica menjadi kopi dengan penjualan tertinggi
-- <b>Kontribusi Pelanggan:</b> Beberapa pelanggan berkontribusi signifikan terhadap penjualan kopi. Dengan data ini stakeholder bisa memutuskan untuk memberikan reward kepada para pelanggan dengan penjualan tertinggi.
-- Amerika menjadi negara dengan penjualan tertinggi. Tidak heran bahwa negara ini merupakan negara dengan konsumsi kopi terbesar di dunia.
+- <b>Tren penjualan:</b> Dengan menggunakan Line Chart yang interakif dapat melihat tren penjualan kopi dalam beberapa tahun terakhir. Tren penjualan kopi menunjukan penjualan yang stabil dari tahun ke tahun.
+- <b>Produk Terlaris:</b> Produk terlaris diantara ke empat jenis kopi adalah Excelsa.
+- <b>Profit<b/>: Walaupun Excelsa menjadi kopi dengan penjualan tertinggi, kopi jenis Liberica menghasilkan profit paling tinggi.
+- <b>Kontribusi Pelanggan:</b> Beberapa pelanggan berkontribusi signifikan terhadap penjualan kopi. Selain itu, Amerika menjadi negara dengan penjualan tertinggi. Tidak heran bahwa negara ini merupakan negara dengan konsumsi kopi terbesar di dunia.Dengan data ini stakeholder bisa memutuskan untuk memberikan reward kepada para pelanggan dengan penjualan tertinggi. 
+
