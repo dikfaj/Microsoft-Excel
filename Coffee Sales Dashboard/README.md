@@ -14,3 +14,15 @@ Dataset ini terdiri dari 3 tabel yaitu `orders`, `customers`, dan `products`. Be
 - Tabel Products<br/>
 ![products](https://github.com/dikfaj/Microsoft-Excel/assets/39393133/45fe61ea-5e4b-4f2d-8ef9-5b2894af6610)
 <br/>Terdiri dari kolom Product ID, Coffee Type, Roast Type Size, Unit Price, Price per 100g dan Profit.
+
+## Data Preprocessing
+### Data Integration
+Langkah pertama yang dilakukan adalah menggabungkan ketiga tabel tersebut menjadi satu tabel utuh dengan menggunakan beberapa fungsi.
+- VLOOKUP <br/>
+Dengan menggunakan fungsi `VLOOKUP` untuk menambahkan kolom Customer Name, Email,  Country, dan Loyalty Card dari tabel `Customers` ke dalam tabel `Orders`. Contohnya adalah <br/> `=VLOOKUP(C2;customers!$A$2:$I$1001;2;0)`.
+- INDEX dan MATCH <br/>
+Dengan menggunakan funsgi `INDEX` dan `MATCH` untuk menambahkan kolom Coffee Type, Roast Type Size, Unit Price dari tabel `Products` ke tabel `Orders`. Contohnya adalah `=INDEX(products!$A$1:$G$49;MATCH(orders!$D2;products!$A$1:$A$49;0);MATCH(I$1;products!$A$1:$G$1;0))`
+- IF <br/>
+Untuk memudahkan dalam membaca data, kita perlu mengubah beberapa data seperti pada kolom `Coffee Type` dan `Roast Type Size` ke dalam kolom baru.<br/>
+Berikut adalah formula untuk mengubah `Coffee Type` menjadi `Coffee Type Name`. <br/> `=IF(J2="Rob";"Robusta";IF(J2="Exc";"Excelsa";IF(J2="Ara";"Arabica";IF(J2="Lib";"Liberica";""))))` <br/>
+Berikut adalah formula untuk mengubah `Roast Type Size` menjadi `Roast Type Name`. <br/> `=IF(K2="M";"Medium";IF(K2="L";"Light";IF(K2="D";"Dark")))`.
